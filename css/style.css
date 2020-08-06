@@ -444,8 +444,10 @@
         width: 100%;
     }
     
-    input {
+    input[type="text"],
+    input[type="email"] {
         height: 5rem;
+        width: 100%;
     }
     
     input,
