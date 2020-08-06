@@ -10,6 +10,16 @@
         src: local("Yu Gothic Bold");
     }
     
+    html {
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+        width: 100%;
+    }
+    
+    html::-webkit-scrollbar {
+        display: none;
+    }
+    
     body {
         font-family: 0 BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans CJK JP", "Original Yu Gothic", "Yu Gothic", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans Emoji";
     }
@@ -438,14 +448,8 @@
         width: 100%;
     }
     
-    html {
-        font-size: 62.5%;
-        scroll-behavior: smooth;
-        width: 100%;
-    }
-    
-    input[type="text"],
-    input[type="email"] {
+    .contact-box ul li input[type="text"],
+    .contact-box ul li input[type="email"] {
         height: 5rem;
         width: 100%;
     }
