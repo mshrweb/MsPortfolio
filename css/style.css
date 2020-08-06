@@ -1,574 +1,594 @@
-    @charset "utf-8";
-    @font-face {
-        font-family: "BadUnicorn";
-        src: url(../font/BadUnicornDemoRegular-BVWx.ttf) format("truetype");
-    }
-    
-    @font-face {
-        font-family: "Original Yu Gothic";
-        font-weight: 700;
-        src: local("Yu Gothic Bold");
-    }
-    
-    html {
-        font-size: 62.5%;
-        scroll-behavior: smooth;
-        width: 100%;
-    }
-    
-    html::-webkit-scrollbar {
-        display: none;
-    }
-    
-    body {
-        font-family: 0 BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans CJK JP", "Original Yu Gothic", "Yu Gothic", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans Emoji";
-    }
-    
-    .about {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        justify-content: center;
-        margin: 5rem auto;
-        padding-top: 5rem;
-        width: 100%;
-    }
-    
-    .about h2 {
-        font-family: "BadUnicorn";
-        font-size: 9rem;
-    }
-    
-    .about-box {
-        display: flex;
-        flex-direction: column;
-        place-items: center;
-    }
-    
-    .about-text {
-        margin: 4rem 0 0;
-    }
-    
-    .about-text p {
-        font-size: 1.5rem;
-    }
-    
-    .bg-left {
-        height: 40vh;
-        width: 100%;
-    }
-    
-    .bg-right {
-        height: 60vh;
-        width: 100%;
-    }
-    
-    .bg-right p {
-        font-family: "BadUnicorn";
-        font-size: 2.5rem;
-    }
-    
-    .contact {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        justify-content: center;
-        padding-top: 5rem;
-        width: 100%;
-    }
-    
-    .contact-box {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .contact-box ul {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        list-style-type: none;
-    }
-    
-    .contact-box ul li {
-        display: flex;
-        flex-direction: column;
-        font-size: 2rem;
-        margin: 1rem 0;
-    }
-    
-    .feature {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        padding-top: 5rem;
-        width: 100%;
-    }
-    
-    .feature h2 {
-        font-family: "BadUnicorn";
-        font-size: 9rem;
-    }
-    
-    .feature p {
-        font-size: 2rem;
-        margin: 2rem;
-        width: 85%;
-    }
-    
-    .ferture-box {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .ferture-box .text {
-        padding-left: 2rem;
-        width: 90%;
-    }
-    
-    .ferture-box img {
-        box-shadow: 0 0 6px 3px #000;
-        width: 92%;
-    }
-    
-    .flowbtn17 {
-        background-color: #444;
-        border-radius: 50%;
-        color: #fff;
-        display: inline-block;
-        font-size: 30px;
-        height: 50px;
-        margin: 10px;
-        position: relative;
-        text-decoration: none;
-        transition: 0.5s;
-        width: 50px;
-    }
-    
-    .flowbtn17 i {
-        -ms-transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        left: 50%;
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-    
-    .flowbtn17.fl_fb2:hover {
-        background: linear-gradient(to bottom, #5c80c6 0%, #34528c 74%);
-    }
-    
-    .flowbtn17.fl_fd2:hover {
-        background: linear-gradient(135deg, #b1ea4d 0%, #459522 100%);
-        font-size: 28px;
-    }
-    
-    .flowbtn17.fl_hb2 {
-        font-size: 25px;
-    }
-    
-    .flowbtn17.fl_hb2:hover {
-        background: linear-gradient(to bottom, #1fbccd 0%, #1c91d4 84%);
-    }
-    
-    .flowbtn17.fl_li2:hover {
-        background: linear-gradient(135deg, #3a9278 0%, #00c300 100%);
-    }
-    
-    .flowbtn17.fl_ma2:hover {
-        background: linear-gradient(135deg, #fad961 0%, #f76b1c 100%);
-    }
-    
-    .flowbtn17.fl_pk2:hover {
-        background: linear-gradient(135deg, #f36265 0%, #dd4f68 100%);
-    }
-    
-    .flowbtn17.fl_tw2:hover {
-        background: linear-gradient(135deg, #13f1fc 0%, #0470dc 100%);
-    }
-    
-    .flowbtn17.fl_yu2:hover {
-        background: linear-gradient(135deg, #f5515f 0%, #c9293c 100%);
-    }
-    
-    .flowbtn17.insta_btn2:hover {
-        background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
-    }
-    
-    .flowbtn17:hover {
-        text-decoration: none;
-    }
-    
+@charset "utf-8";
+@font-face {
+    font-family: "BadUnicorn";
+    src: url(../font/BadUnicornDemoRegular-BVWx.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Original Yu Gothic";
+    font-weight: 700;
+    src: local("Yu Gothic Bold");
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.pagebreak {
+    page-break-before: always;
+}
+
+body {
+    font-family: 0 BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans CJK JP", "Original Yu Gothic", "Yu Gothic", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Sans Emoji";
+}
+
+body * {
+    page-break-inside: avoid;
+}
+
+.about {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    margin: 5rem auto;
+    padding-top: 5rem;
+    width: 100%;
+}
+
+.about h2 {
+    font-family: "BadUnicorn";
+    font-size: 9rem;
+}
+
+.about-box {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.about-text {
+    margin: 4rem 0 0;
+}
+
+.about-text p {
+    font-size: 1.5rem;
+}
+
+.bg-left {
+    height: 40vh;
+    width: 100%;
+}
+
+.bg-right {
+    height: 60vh;
+    width: 100%;
+}
+
+.bg-right p {
+    font-family: "BadUnicorn";
+    font-size: 2.5rem;
+}
+
+.contact {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    padding-top: 5rem;
+    width: 100%;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-box ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.contact-box ul li {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.feature {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 5rem 0;
+    width: 100%;
+}
+
+.feature h2 {
+    font-family: "BadUnicorn";
+    font-size: 9rem;
+}
+
+.feature .feature-box .text p {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.feature-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+}
+
+.feature-box .text {
+    width: 90%;
+}
+
+.feature-box img {
+    box-shadow: 0 0 6px 3px #000;
+    width: 92%;
+}
+
+.flowbtn17 {
+    background-color: #444;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 30px;
+    height: 50px;
+    margin: 10px;
+    position: relative;
+    text-decoration: none;
+    transition: 0.5s;
+    width: 50px;
+}
+
+.flowbtn17 i {
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flowbtn17.fl_fb2:hover {
+    background: linear-gradient(to bottom, #5c80c6 0%, #34528c 74%);
+}
+
+.flowbtn17.fl_fd2:hover {
+    background: linear-gradient(135deg, #b1ea4d 0%, #459522 100%);
+    font-size: 28px;
+}
+
+.flowbtn17.fl_hb2 {
+    font-size: 25px;
+}
+
+.flowbtn17.fl_hb2:hover {
+    background: linear-gradient(to bottom, #1fbccd 0%, #1c91d4 84%);
+}
+
+.flowbtn17.fl_li2:hover {
+    background: linear-gradient(135deg, #3a9278 0%, #00c300 100%);
+}
+
+.flowbtn17.fl_ma2:hover {
+    background: linear-gradient(135deg, #fad961 0%, #f76b1c 100%);
+}
+
+.flowbtn17.fl_pk2:hover {
+    background: linear-gradient(135deg, #f36265 0%, #dd4f68 100%);
+}
+
+.flowbtn17.fl_tw2:hover {
+    background: linear-gradient(135deg, #13f1fc 0%, #0470dc 100%);
+}
+
+.flowbtn17.fl_yu2:hover {
+    background: linear-gradient(135deg, #f5515f 0%, #c9293c 100%);
+}
+
+.flowbtn17.insta_btn2:hover {
+    background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+}
+
+.flowbtn17:hover {
+    text-decoration: none;
+}
+
+.gnav__menu {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+}
+
+.gnav__menu__item {
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+    width: 30%;
+}
+
+.gnav__menu__item__link {
+    color: #000;
+}
+
+.gnav__menu__item__link:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.item-box {
+    align-items: center;
+    background-color: #030617;
+    display: flex;
+    height: 80%;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 95%;
+    flex-direction: column;
+}
+
+.myicon {
+    /*background: url(../images/top-bg.jpg) 
+    center center;*/
+    background-size: cover;
+    border-radius: 90%;
+    height: 25rem;
+    margin-top: 2rem;
+    width: 25rem;
+}
+
+.myicon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 90%;
+    object-fit: cover;
+}
+
+.name {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 2rem;
+}
+
+.name h3 {
+    font-size: 3rem;
+}
+
+.name span,
+.contact p {
+    font-size: 2rem;
+}
+
+.site-header {
+    background: rgba(255, 255, 255, 0.8);
+    height: auto;
+    position: fixed;
+    top: 0;
+    transition: 0.5s;
+    z-index: 999;
+}
+
+.site-header.hide {
+    transform: translateY(-100%);
+}
+
+.skill {
+    align-items: center;
+    background-color: #030617;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: start;
+    padding: 5rem 0;
+    width: 100%;
+    height: auto;
+}
+
+.skill h2 {
+    font-family: "BadUnicorn";
+    font-size: 9rem;
+}
+
+.skill-box {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.skill-icon {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 90%;
+    display: flex;
+    height: 9rem;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    width: 9rem;
+}
+
+.skill-icon img {
+    border-radius: 90%;
+    height: 100%;
+    object-fit: cover;
+    width: auto;
+}
+
+.skill-item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-around;
+    margin: 0;
+    width: 45%;
+    word-wrap: break-word;
+}
+
+.snsbtniti {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.top .bg-left {
+    background: url(../images/top-bg.jpg) center center;
+    background-size: cover;
+}
+
+.top .bg-right {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.work-item {
+    align-items: center;
+    background-color: #030617;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-between;
+    object-fit: cover;
+    width: 95%;
+    padding: 2.5rem 0;
+}
+
+.work-item h4 {
+    margin-top: 1rem;
+}
+
+.work-item img {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 0 6px 3px #707070;
+    height: auto;
+    width: 95%;
+}
+
+.works {
+    align-items: center;
+    background-color: #030617;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: start;
+    padding: 5rem 0;
+    width: 100%;
+}
+
+.works h2,
+.contact h2 {
+    font-family: "BadUnicorn";
+    font-size: 9rem;
+}
+
+div {
+    display: block;
+}
+
+footer {
+    align-items: center;
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+}
+
+form {
+    width: 90%;
+}
+
+h1 {
+    font-family: "BadUnicorn";
+    font-size: 8rem;
+}
+
+h2 {
+    font-family: "BadUnicorn";
+}
+
+h4,
+h5 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+header,
+footer,
+.gnav {
+    width: 100%;
+}
+
+.contact-box ul li input[type="text"],
+.contact-box ul li input[type="email"] {
+    height: 5rem;
+    width: 100%;
+}
+
+input,
+textarea {
+    border: 1px solid;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+input[type="submit"] {
+    font-size: 2rem;
+    width: 100%;
+}
+
+textarea {
+    height: 15rem;
+    width: 100%;
+}
+
+ul.snsbtniti {
+    padding: 0 !important;
+}
+
+@media screen and (min-width: 480px) {
     .gnav__menu {
-        align-items: center;
-        display: flex;
-        flex-wrap: wrap;
-        height: auto;
-        justify-content: center;
-        list-style: none;
+        flex-wrap: nowrap;
+        margin: 0 auto;
         width: 100%;
     }
-    
     .gnav__menu__item {
         font-size: 2rem;
-        padding: 1rem;
-        text-align: center;
-        width: 30%;
-    }
-    
-    .gnav__menu__item__link {
-        color: #000;
-    }
-    
-    .gnav__menu__item__link:hover {
-        background-color: #000;
-        color: #fff;
-    }
-    
-    .item-box {
-        align-items: center;
-        background-color: #030617;
-        display: flex;
-        height: 80%;
-        justify-content: space-between;
-        list-style-type: none;
-        width: 95%;
-        flex-direction: column;
-    }
-    
-    .myicon {
-        background: url(../images/top-bg.jpg) center center;
-        background-size: cover;
-        border-radius: 90%;
-        height: 25rem;
-        margin-top: 2rem;
-        width: 25rem;
-    }
-    
-    .name {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        margin-bottom: 2rem;
-    }
-    
-    .name h3 {
-        font-size: 3rem;
-    }
-    
-    .name span,
-    .contact p {
-        font-size: 2rem;
-    }
-    
-    .site-header {
-        background: rgba(255, 255, 255, 0.8);
-        height: auto;
-        position: fixed;
-        top: 0;
-        transition: 0.5s;
-        z-index: 999;
-    }
-    
-    .site-header.hide {
-        transform: translateY(-100%);
-    }
-    
-    .skill {
-        align-items: center;
-        background-color: #030617;
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        justify-content: start;
-        padding: 5rem 0;
-        width: 100%;
-        height: auto;
-    }
-    
-    .skill h2 {
-        font-family: "BadUnicorn";
-        font-size: 9rem;
-    }
-    
-    .skill-box {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: auto;
-        justify-content: center;
-        list-style-type: none;
-    }
-    
-    .skill-icon {
-        align-items: center;
-        background-color: #fff;
-        border-radius: 90%;
-        display: flex;
-        height: 9rem;
-        justify-content: center;
-        margin-bottom: 0.5rem;
-        width: 9rem;
-    }
-    
-    .skill-icon img {
-        border-radius: 90%;
-        height: 100%;
-        object-fit: cover;
+        padding: 2rem;
         width: auto;
     }
-    
+    .item-box {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .skill-box {
+        flex-direction: row;
+    }
     .skill-item {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        justify-content: start;
-        margin: 3rem;
-        width: 70%;
-        word-wrap: break-word;
+        width: 40%;
     }
-    
-    .snsbtniti {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        list-style-type: none;
-    }
-    
-    .top {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    
-    .top .bg-left {
-        background: url(../images/top-bg.jpg) center center;
-        background-size: cover;
-    }
-    
-    .top .bg-right {
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-    
     .work-item {
-        align-items: center;
-        background-color: #030617;
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        justify-content: space-between;
-        object-fit: cover;
-        width: 95%;
-        padding: 2rem 0;
+        width: 49%;
     }
-    
-    .work-item img {
-        background-color: #fff;
-        border: 1px solid #ccc;
-        border-radius: 6px;
-        box-shadow: 0 0 6px 3px #707070;
-        height: auto;
-        width: 95%;
+}
+
+@media screen and (min-width: 768px) and( max-width:1024px) {
+    .about-text {
+        margin-left: 3rem;
     }
-    
-    .works {
-        align-items: center;
-        background-color: #030617;
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        justify-content: start;
-        padding: 5rem 0;
-        width: 100%;
+    .name {
+        align-items: flex-start;
     }
-    
-    .works h2,
-    .contact h2 {
-        font-family: "BadUnicorn";
-        font-size: 9rem;
+    .bg-left,
+    .bg-right {
+        height: 100vh;
+        width: 50%;
     }
-    
-    div {
-        display: block;
+    .skill-item {
+        margin: 0;
+        width: 33%;
     }
-    
-    footer {
-        align-items: center;
-        display: flex;
-        height: 20vh;
-        justify-content: center;
+    .top,
+    .about-box {
+        flex-direction: row;
     }
-    
-    form {
+}
+
+@media screen and (min-width: 1024px) {
+    .about {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    .about h2 {
+        padding-bottom: 5rem;
+    }
+    .about-text {
+        margin-left: 4rem;
+        margin-top: 0;
+    }
+    .bg-left,
+    .bg-right {
+        height: 100vh;
+        width: 50%;
+    }
+    .contact-box {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .contact-box ul {
+        width: 45%;
+    }
+    .feature-box {
         width: 90%;
+        margin: 0 auto;
+        justify-content: space-around;
     }
-    
-    h1 {
-        font-family: "BadUnicorn";
-        font-size: 8rem;
+    .feature-box img,
+    .feature-box .text {
+        width: 48%;
     }
-    
-    h2 {
-        font-family: "BadUnicorn";
+    .name {
+        align-items: flex-start;
     }
-    
-    h4,
-    h5 {
-        font-size: 2rem;
+    .skill-item {
+        margin: 2rem 0;
+        width: 30%;
     }
-    
-    p {
-        font-size: 1rem;
+    .top,
+    .about-box,
+    .feature-box {
+        flex-direction: row;
     }
-    
-    header {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        width: 100%;
+    .top .bg-right h1 {
+        font-size: 10rem;
     }
-    
-    header,
-    footer,
-    .gnav {
-        width: 100%;
-    }
-    
-    .contact-box ul li input[type="text"],
-    .contact-box ul li input[type="email"] {
-        height: 5rem;
-        width: 100%;
-    }
-    
-    input,
-    textarea {
-        border: 1px solid;
-        border-radius: 1rem;
+    .top .bg-right p {
+        font-size: 4rem;
         padding: 1rem;
     }
-    
-    input[type="submit"] {
-        font-size: 2rem;
-        width: 100%;
-    }
-    
-    textarea {
-        height: 15rem;
-        width: 100%;
-    }
-    
-    ul.snsbtniti {
-        padding: 0 !important;
-    }
-    
-    @media screen and (min-width: 480px) {
-        .gnav__menu {
-            flex-wrap: nowrap;
-            margin: 0 auto;
-            width: 100%;
-        }
-        .gnav__menu__item {
-            font-size: 2rem;
-            padding: 2rem;
-            width: auto;
-        }
-        .item-box {
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-        .skill-box {
-            flex-direction: row;
-        }
-        .skill-item {
-            width: 40%;
-        }
-        .work-item {
-            width: 49%;
-        }
-    }
-    
-    @media screen and (min-width: 768px) and( max-width:1024px) {
-        .about-text {
-            margin-left: 3rem;
-        }
-        .name {
-            align-items: flex-start;
-        }
-        .bg-left,
-        .bg-right {
-            height: 100vh;
-            width: 50%;
-        }
-        .skill-item {
-            margin: 0;
-            width: 33%;
-        }
-        .top,
-        .about-box {
-            flex-direction: row;
-        }
-    }
-    
-    @media screen and (min-width: 1024px) {
-        .about {
-            height: 100vh;
-            margin: 0;
-            padding: 0;
-        }
-        .about h2 {
-            padding-bottom: 5rem;
-        }
-        .about-text {
-            margin-left: 4rem;
-            margin-top: 0;
-        }
-        .bg-left,
-        .bg-right {
-            height: 100vh;
-            width: 50%;
-        }
-        .contact-box {
-            flex-direction: row;
-            justify-content: space-around;
-        }
-        .contact-box ul {
-            width: 45%;
-        }
-        .ferture-box img,
-        text {
-            width: 50%;
-        }
-        .name {
-            align-items: flex-start;
-        }
-        .skill-item {
-            margin: 2rem 0;
-            width: 30%;
-        }
-        .top,
-        .about-box,
-        .ferture-box {
-            flex-direction: row;
-        }
-        .top .bg-right h1 {
-            font-size: 10rem;
-        }
-        .top .bg-right p {
-            font-size: 4rem;
-            padding: 1rem;
-        }
-    }
+}
