@@ -285,6 +285,7 @@ body * {
     top: 0;
     transition: 0.5s;
     z-index: 999;
+    display: none;
 }
 
 .site-header.hide {
@@ -317,6 +318,7 @@ body * {
     height: auto;
     justify-content: center;
     list-style-type: none;
+    margin-bottom: 2rem;
 }
 
 .skill-icon {
@@ -383,11 +385,17 @@ body * {
     justify-content: space-between;
     object-fit: cover;
     width: 95%;
-    padding: 2.5rem 0;
+    padding: 2.2rem 0;
+    visibility: hidden;
 }
 
 .work-item h4 {
     margin-top: 1rem;
+}
+
+.work-item a {
+    width: 95%;
+    margin: 0 auto;
 }
 
 .work-item img {
@@ -396,7 +404,8 @@ body * {
     border-radius: 6px;
     box-shadow: 0 0 6px 3px #707070;
     height: auto;
-    width: 95%;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .works {
