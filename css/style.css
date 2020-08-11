@@ -587,6 +587,9 @@ ul.snsbtniti {
         height: 100vh;
         width: 50%;
     }
+    .contact {
+        height: 80vh;
+    }
     .contact-box {
         flex-direction: row;
         justify-content: space-around;
