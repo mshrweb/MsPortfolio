@@ -133,6 +133,7 @@ body * {
 
 .feature-box .text {
     width: 90%;
+    margin:0 auto;
 }
 
 .feature-box picture {
@@ -355,7 +356,7 @@ body * {
     flex-direction: column;
     height: auto;
     justify-content: space-around;
-    margin: 0;
+    margin: 2rem 0;
     width: 45%;
     word-wrap: break-word;
 }
