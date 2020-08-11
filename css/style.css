@@ -621,3 +621,7 @@ ul.snsbtniti {
         padding: 1rem;
     }
 }
+@media print {
+    header {
+        display: none;
+}
