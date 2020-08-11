@@ -321,7 +321,7 @@ body * {
 }
 
 .skill-box {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -354,8 +354,8 @@ body * {
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: auto;
-    justify-content: space-around;
+    height: 17rem;
+    justify-content: flex-start;
     margin: 2rem 0;
     width: 45%;
     word-wrap: break-word;
