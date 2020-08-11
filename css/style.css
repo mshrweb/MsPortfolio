@@ -111,6 +111,7 @@ body * {
     height: auto;
     padding: 5rem 0;
     width: 100%;
+    justify-content:flex-start;
 }
 
 .feature h2 {
@@ -354,7 +355,7 @@ body * {
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 17rem;
+    height: 22rem;
     justify-content: flex-start;
     margin: 2rem 0;
     width: 45%;
