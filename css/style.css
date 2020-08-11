@@ -134,9 +134,18 @@ body * {
     width: 90%;
 }
 
-.feature-box img {
-    box-shadow: 0 0 6px 3px #000;
+.feature-box picture {
     width: 92%;
+}
+
+.feature-box picture source {
+    box-shadow: 0 0 6px 3px #000;
+    width: 100%;
+}
+
+.feature-box picture img {
+    box-shadow: 0 0 6px 3px #000;
+    width: 100%;
 }
 
 .flowbtn17 {
@@ -458,6 +467,12 @@ p {
     font-size: 1rem;
 }
 
+picture {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
 header {
     align-items: center;
     display: flex;
@@ -544,6 +559,10 @@ ul.snsbtniti {
     .about-box {
         flex-direction: row;
     }
+    .feature .feature-box picture {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -576,7 +595,7 @@ ul.snsbtniti {
         margin: 0 auto;
         justify-content: space-around;
     }
-    .feature-box img,
+    .feature-box picture,
     .feature-box .text {
         width: 48%;
     }
@@ -599,10 +618,4 @@ ul.snsbtniti {
         font-size: 4rem;
         padding: 1rem;
     }
-}
-@media print { 
- /* All your print styles go here */
-    header{ 
-        display: none !important;
-    } 
 }
