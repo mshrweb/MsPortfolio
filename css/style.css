@@ -2,6 +2,7 @@
 @font-face {
     font-family: "BadUnicorn";
     src: url(../font/BadUnicornDemoRegular-BVWx.ttf) format("truetype");
+    font-display: swap;
 }
 
 @font-face {
