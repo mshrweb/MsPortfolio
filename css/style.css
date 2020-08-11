@@ -341,7 +341,8 @@ body * {
     width: 9rem;
 }
 
-.skill-icon img {
+.skill-icon img,
+.skill-icon source{
     border-radius: 90%;
     height: 100%;
     object-fit: cover;
